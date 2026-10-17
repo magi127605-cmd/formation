@@ -1,3 +1,14 @@
 [
-  {"id": "sample-arsenal-leeds", "file": "sample-arsenal-leeds.json", "title": "見本：アーセナル 対 リーズ（送ってもらった図の写し）", "date": ""}
+  {
+    "id": "2026-10-17_mancity-ipswich",
+    "file": "2026-10-17_mancity-ipswich.json",
+    "title": "マンチェスター・シティ 対 イプスウィッチ（プレミア第7節）",
+    "date": "2026-10-17"
+  },
+  {
+    "id": "sample-arsenal-leeds",
+    "file": "sample-arsenal-leeds.json",
+    "title": "見本：アーセナル 対 リーズ（送ってもらった図の写し）",
+    "date": ""
+  }
 ]
