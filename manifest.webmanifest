@@ -1,0 +1,9 @@
+{
+  "name": "布陣ボード",
+  "short_name": "布陣ボード",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f5f2",
+  "theme_color": "#1f2a24",
+  "icons": [{"src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml"}]
+}

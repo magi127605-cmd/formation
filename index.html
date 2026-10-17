@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>布陣ボード</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1f2a24">
+<link rel="stylesheet" href="app.css?v=1.0.0">
+</head>
+<body>
+<header class="top">
+  <h1>布陣ボード</h1>
+  <select id="boardSelect" aria-label="試合を選ぶ"></select>
+  <button id="menuBtn" class="ghost" aria-label="メニュー">︙</button>
+</header>
+
+<div class="toolbar" role="toolbar">
+  <div class="seg" id="toolSeg">
+    <button data-tool="move" class="on">✋ 動かす</button>
+    <button data-tool="pen">✏️ ペン</button>
+    <button data-tool="arrow">➜ 矢印</button>
+    <button data-tool="erase">🧽 消す</button>
+  </div>
+  <div class="colors" id="penColors">
+    <button data-color="#111111" style="--c:#111111" class="on" aria-label="黒"></button>
+    <button data-color="#e53935" style="--c:#e53935" aria-label="赤"></button>
+    <button data-color="#1e88e5" style="--c:#1e88e5" aria-label="青"></button>
+    <button data-color="#fbc02d" style="--c:#fbc02d" aria-label="黄"></button>
+  </div>
+  <button id="undoBtn">↶ 戻す</button>
+  <button id="clearLinesBtn">線を全部消す</button>
+  <button id="resetBtn">並びを初期に</button>
+  <button id="pngBtn" class="primary">画像で保存</button>
+</div>
+
+<main>
+  <div class="boardWrap">
+    <svg id="board" viewBox="-70 -14 1190 708" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+
+  <section class="panel">
+    <div class="teams">
+      <div class="teamCard" data-side="home">
+        <div class="row"><span class="sideTag">左</span><input class="tName" aria-label="チーム名"><input type="color" class="tColor" aria-label="色"></div>
+        <div class="row"><label>布陣 <select class="tForm"></select></label><label class="chk"><input type="checkbox" class="tShow" checked> 表示</label></div>
+      </div>
+      <div class="teamCard" data-side="away">
+        <div class="row"><span class="sideTag">右</span><input class="tName" aria-label="チーム名"><input type="color" class="tColor" aria-label="色"></div>
+        <div class="row"><label>布陣 <select class="tForm"></select></label><label class="chk"><input type="checkbox" class="tShow" checked> 表示</label></div>
+      </div>
+    </div>
+    <div class="opts">
+      <label class="chk"><input type="checkbox" id="optNames" checked> 名前を出す</label>
+      <label class="chk"><input type="checkbox" id="optBall"> ボールを出す</label>
+      <label>芝 <select id="optPitch"><option value="white">白（図解向け）</option><option value="green">緑</option></select></label>
+    </div>
+
+    <h2>場面</h2>
+    <p class="hint">気になった配置を「前半12分 押し込まれた形」のように名前をつけて残せる。押すと戻る。</p>
+    <div class="row"><input id="sceneName" placeholder="例：前半12分 右サイドを破られた形"><button id="sceneSave" class="primary">今の形を残す</button></div>
+    <ul id="sceneList" class="scenes"></ul>
+
+    <h2>メモ</h2>
+    <textarea id="memo" rows="6" placeholder="気づいたこと・「ん？」と思った場面の時間など"></textarea>
+    <p class="hint" id="infoLine"></p>
+  </section>
+</main>
+
+<dialog id="playerDlg">
+  <form method="dialog">
+    <h3>選手を直す</h3>
+    <label>番号 <input id="pNo" inputmode="numeric" maxlength="3"></label>
+    <label>名前 <input id="pName"></label>
+    <label>位置メモ <input id="pPos" placeholder="例：右SB"></label>
+    <label class="chk"><input type="checkbox" id="pHide"> 盤から外す（退場など）</label>
+    <div class="dlgBtns"><button value="cancel" class="ghost">やめる</button><button value="ok" class="primary">決定</button></div>
+  </form>
+</dialog>
+
+<dialog id="menuDlg">
+  <form method="dialog">
+    <h3>メニュー</h3>
+    <button type="button" id="newBlank">白紙の盤を作る</button>
+    <button type="button" id="importBtn">試合データを貼り付けて読み込む</button>
+    <button type="button" id="exportBtn">この盤をファイルに書き出す</button>
+    <button type="button" id="importFileBtn">ファイルから読み込む</button>
+    <button type="button" id="deleteBoard" class="danger">この盤の書き込みを消す</button>
+    <input type="file" id="fileInput" accept=".json,application/json" hidden>
+    <p class="hint">書き込み（動かした位置・線・場面・メモ）はこの端末に自動で残る。</p>
+    <div class="dlgBtns"><button value="close" class="ghost">閉じる</button></div>
+  </form>
+</dialog>
+
+<dialog id="importDlg">
+  <form method="dialog">
+    <h3>試合データを貼り付け</h3>
+    <textarea id="importText" rows="10" placeholder='社長が渡した { "title": ... } をそのまま貼る'></textarea>
+    <div class="dlgBtns"><button value="cancel" class="ghost">やめる</button><button value="ok" class="primary">読み込む</button></div>
+  </form>
+</dialog>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="js/formations.js?v=1.0.0"></script>
+<script src="js/app.js?v=1.0.0"></script>
+</body>
+</html>

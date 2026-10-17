@@ -1,0 +1,67 @@
+:root{
+  --bg:#f4f5f2; --card:#fff; --ink:#1d221f; --sub:#5d665f; --line:#d9ddd6;
+  --accent:#1f6f4a; --danger:#c62828;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Hiragino Sans","Yu Gothic UI","Meiryo",system-ui,sans-serif;font-size:15px}
+button,input,select,textarea{font:inherit;color:inherit}
+button{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 10px;cursor:pointer;white-space:nowrap}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+button.ghost{background:transparent}
+button.danger{color:var(--danger);border-color:#e7b3b3}
+input,select,textarea{border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:#fff;min-width:0}
+textarea{width:100%;resize:vertical}
+
+.top{display:flex;align-items:center;gap:8px;padding:8px 12px;background:#1f2a24;color:#fff;position:sticky;top:0;z-index:5}
+.top h1{font-size:16px;margin:0;white-space:nowrap}
+.top select{flex:1;max-width:520px;color:var(--ink)}
+.top .ghost{color:#fff;border-color:#4a5a50;font-size:18px;padding:2px 12px}
+
+.toolbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 12px;background:#fff;border-bottom:1px solid var(--line)}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;border-radius:0;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button.on{background:var(--accent);color:#fff}
+.colors{display:flex;gap:4px}
+.colors button{width:26px;height:26px;padding:0;border-radius:50%;background:var(--c);border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.colors button.on{box-shadow:0 0 0 2px var(--ink)}
+#pngBtn{margin-left:auto}
+
+main{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:12px;padding:12px;max-width:1500px;margin:0 auto}
+@media (max-width:980px){main{grid-template-columns:minmax(0,1fr)}}
+.boardWrap{background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px;align-self:start}
+#board{width:100%;height:auto;display:block;touch-action:none;user-select:none;-webkit-user-select:none}
+#board.tool-pen,#board.tool-arrow{cursor:crosshair}
+#board.tool-erase{cursor:not-allowed}
+#board .piece{cursor:grab}
+#board.tool-move .piece:active{cursor:grabbing}
+
+.panel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;align-self:start}
+.panel h2{font-size:15px;margin:16px 0 4px}
+.row{display:flex;gap:6px;align-items:center;margin:4px 0}
+.row input:not([type]),.row input[type=text]{flex:1}
+.teams{display:grid;gap:8px}
+.teamCard{border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.teamCard .tName{flex:1}
+.teamCard .tColor{width:40px;height:34px;padding:2px}
+.sideTag{font-size:12px;background:#eef1ec;border-radius:6px;padding:2px 6px;color:var(--sub)}
+.chk{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.opts{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;align-items:center}
+.hint{font-size:12.5px;color:var(--sub);margin:4px 0}
+#sceneName{flex:1}
+.scenes{list-style:none;padding:0;margin:6px 0}
+.scenes li{display:flex;gap:6px;align-items:center;border-bottom:1px solid #eef0ec;padding:4px 0}
+.scenes li .go{flex:1;text-align:left;border:0;background:transparent;padding:6px 2px}
+.scenes li .go.cur{font-weight:700;color:var(--accent)}
+.scenes li .del{border:0;color:var(--sub);background:transparent}
+
+dialog{border:0;border-radius:12px;padding:16px;width:min(420px,92vw);box-shadow:0 10px 40px rgba(0,0,0,.25)}
+dialog::backdrop{background:rgba(0,0,0,.35)}
+dialog h3{margin:0 0 10px;font-size:16px}
+dialog label{display:flex;flex-direction:column;gap:3px;margin:8px 0;font-size:13px;color:var(--sub)}
+dialog label.chk{flex-direction:row;color:var(--ink);font-size:15px}
+#menuDlg form>button{display:block;width:100%;margin:6px 0;text-align:left;padding:10px}
+.dlgBtns{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1f2a24;color:#fff;padding:10px 16px;border-radius:999px;z-index:20;font-size:14px}
