@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#1f2a24">
-<link rel="stylesheet" href="app.css?v=1.0.0">
+<link rel="stylesheet" href="app.css?v=1.1.0">
 </head>
 <body>
 <header class="top">
@@ -63,6 +63,16 @@
     <div class="row"><input id="sceneName" placeholder="例：前半12分 右サイドを破られた形"><button id="sceneSave" class="primary">今の形を残す</button></div>
     <ul id="sceneList" class="scenes"></ul>
 
+    <h2>動画（コマ送り）</h2>
+    <p class="hint">駒を置いて「コマに追加」を繰り返すと、コマからコマへ駒がなめらかに動く動画になる。「移動」はそのコマへ動く秒数、「止まる」はそのコマで止まる秒数。</p>
+    <div class="row"><input id="frameName" placeholder="例：クロスの直前（歩いている）"><button id="frameAdd" class="primary">今の形をコマに追加</button></div>
+    <ul id="frameList" class="frames"></ul>
+    <div class="row frameBtns">
+      <label class="chk"><input type="checkbox" id="optCaption" checked> コマの名前を字幕で出す</label>
+      <button id="animPlay">▶ 再生して確かめる</button>
+      <button id="animExport" class="primary">動画で保存</button>
+    </div>
+
     <h2>メモ</h2>
     <textarea id="memo" rows="6" placeholder="気づいたこと・「ん？」と思った場面の時間など"></textarea>
     <p class="hint" id="infoLine"></p>
@@ -102,9 +112,19 @@
   </form>
 </dialog>
 
+<dialog id="animDlg" class="animDlg">
+  <canvas id="animCanvas" width="1920" height="1080"></canvas>
+  <div class="dlgBtns animCtl">
+    <span id="animStatus" class="hint"></span>
+    <button type="button" id="animReplay">▶ もう一度</button>
+    <button type="button" id="animSave" class="primary">動画で保存</button>
+    <button type="button" id="animClose" class="ghost">閉じる</button>
+  </div>
+</dialog>
+
 <div id="toast" class="toast" hidden></div>
 
-<script src="js/formations.js?v=1.0.0"></script>
-<script src="js/app.js?v=1.0.0"></script>
+<script src="js/formations.js?v=1.1.0"></script>
+<script src="js/app.js?v=1.1.0"></script>
 </body>
 </html>

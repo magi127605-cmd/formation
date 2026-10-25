@@ -5,7 +5,7 @@
   const LS_PREFIX = "fb:board:";
   const LS_LOCAL = "fb:local";   // この端末で作った盤（白紙・貼り付け）の一覧
   const LS_LAST = "fb:last";
-  const VERSION = "1.0.0";
+  const VERSION = "1.1.0";
 
   const $ = s => document.querySelector(s);
   const svg = $("#board");
@@ -422,6 +422,7 @@
     const info = [board.date, board.competition, board.venue].filter(Boolean).join("・");
     $("#infoLine").textContent = (info ? info + "　" : "") + "書き込みはこの端末に自動保存";
     renderScenes();
+    renderFrames();
   }
 
   document.querySelectorAll(".teamCard").forEach(card => {
@@ -529,6 +530,224 @@
     img.onerror = () => toast("画像にできなかった");
     img.src = url;
   });
+
+  // ---------- 動画（コマ送り） ----------
+  // board.anim = { frames: [{ name, dur(このコマへ動く秒), hold(止まる秒), snap }], caption }
+  function anim() {
+    if (!board.anim) board.anim = { frames: [], caption: true };
+    return board.anim;
+  }
+  const fmtSec = v => (Math.round(v * 10) / 10).toFixed(1);
+
+  function renderFrames() {
+    const a = anim();
+    const ul = $("#frameList");
+    ul.innerHTML = "";
+    $("#optCaption").checked = a.caption !== false;
+    if (!a.frames.length) {
+      const li = document.createElement("li"); li.className = "hint"; li.textContent = "まだない。駒を置いて「今の形をコマに追加」"; ul.appendChild(li); return;
+    }
+    a.frames.forEach((f, i) => {
+      const li = document.createElement("li");
+      const name = document.createElement("input"); name.className = "fName"; name.value = f.name; name.title = "コマの名前（字幕に出る）";
+      name.onchange = () => { f.name = name.value.trim() || `コマ${i + 1}`; name.value = f.name; save(); };
+      const dur = document.createElement("label"); dur.className = "fNum";
+      dur.innerHTML = `<span>${i === 0 ? "最初" : "移動"}</span>`;
+      const dIn = document.createElement("input"); dIn.type = "number"; dIn.step = "0.1"; dIn.min = "0"; dIn.value = fmtSec(f.dur); dIn.disabled = i === 0;
+      dIn.onchange = () => { f.dur = Math.max(0, +dIn.value || 0); dIn.value = fmtSec(f.dur); save(); };
+      dur.append(dIn, document.createTextNode("秒"));
+      const hold = document.createElement("label"); hold.className = "fNum"; hold.innerHTML = "<span>止まる</span>";
+      const hIn = document.createElement("input"); hIn.type = "number"; hIn.step = "0.1"; hIn.min = "0"; hIn.value = fmtSec(f.hold);
+      hIn.onchange = () => { f.hold = Math.max(0, +hIn.value || 0); hIn.value = fmtSec(f.hold); save(); };
+      hold.append(hIn, document.createTextNode("秒"));
+      const ops = document.createElement("div"); ops.className = "fOps";
+      const go = document.createElement("button"); go.className = "go"; go.textContent = "盤へ"; go.title = "このコマの形を盤に出す（直して「上書き」できる）";
+      go.onclick = () => { pushHistory(); Object.assign(board, clone(f.snap)); curScene = -1; save(); syncPanel(); render(); toast(`「${f.name}」を盤に出した`); };
+      const ow = document.createElement("button"); ow.textContent = "上書き"; ow.title = "今の盤の形でこのコマを上書き";
+      ow.onclick = () => { f.snap = snap(); save(); toast(`「${f.name}」を上書きした`); };
+      const up = document.createElement("button"); up.textContent = "▲"; up.title = "一つ前へ"; up.disabled = i === 0;
+      up.onclick = () => { [a.frames[i - 1], a.frames[i]] = [a.frames[i], a.frames[i - 1]]; save(); renderFrames(); };
+      const dn = document.createElement("button"); dn.textContent = "▼"; dn.title = "一つ後へ"; dn.disabled = i === a.frames.length - 1;
+      dn.onclick = () => { [a.frames[i + 1], a.frames[i]] = [a.frames[i], a.frames[i + 1]]; save(); renderFrames(); };
+      const del = document.createElement("button"); del.textContent = "✕"; del.title = "消す";
+      del.onclick = () => { if (!confirm(`「${f.name}」を消す？`)) return; a.frames.splice(i, 1); save(); renderFrames(); };
+      ops.append(go, ow, up, dn, del);
+      li.append(name, dur, hold, ops); ul.appendChild(li);
+    });
+  }
+  $("#frameAdd").addEventListener("click", () => {
+    const a = anim();
+    const name = $("#frameName").value.trim() || `コマ${a.frames.length + 1}`;
+    a.frames.push({ name, dur: a.frames.length ? 1.5 : 0, hold: 1.5, snap: snap() });
+    $("#frameName").value = ""; save(); renderFrames(); toast(`「${name}」をコマに追加した（${a.frames.length}コマ）`);
+  });
+  $("#optCaption").addEventListener("change", e => { anim().caption = e.target.checked; save(); });
+
+  // --- 時間→盤の状態 ---
+  const ease = t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  function timeline() {
+    const fr = anim().frames;
+    const segs = []; let t = 0;
+    fr.forEach((f, i) => {
+      if (i > 0 && f.dur > 0) { segs.push({ kind: "move", from: fr[i - 1], to: f, t0: t, t1: t + f.dur }); t += f.dur; }
+      const h = Math.max(f.hold, i === fr.length - 1 ? Math.max(f.hold, 0.8) : f.hold);
+      segs.push({ kind: "hold", frame: f, t0: t, t1: t + h }); t += h;
+    });
+    return { segs, total: t };
+  }
+  function stateAt(tl, time) {
+    const seg = tl.segs.find(s => time < s.t1) || tl.segs[tl.segs.length - 1];
+    if (!seg) return null;
+    if (seg.kind === "hold") return { snap: seg.frame.snap, lines: seg.frame.snap.lines, caption: seg.frame.name };
+    const k = ease(Math.min(1, Math.max(0, (time - seg.t0) / (seg.t1 - seg.t0))));
+    const A = seg.from.snap, B = seg.to.snap, out = clone(B);
+    ["home", "away"].forEach(s => out[s].players.forEach((p, i) => {
+      const q = A[s].players[i]; if (!q) return;
+      p.x = q.x + (p.x - q.x) * k; p.y = q.y + (p.y - q.y) * k;
+      if (q.hidden && !p.hidden) p.hidden = k < 0.5; // 途中で現れる
+    }));
+    out.ball.x = A.ball.x + (B.ball.x - A.ball.x) * k; out.ball.y = A.ball.y + (B.ball.y - A.ball.y) * k;
+    out.ball.show = k < 0.5 ? A.ball.show : B.ball.show;
+    return { snap: out, lines: A.lines, caption: seg.from.name };
+  }
+
+  // --- キャンバス描画（SVGと同じ見た目） ---
+  const FONT = '"Hiragino Sans","Yu Gothic UI","Meiryo","Noto Sans JP",sans-serif';
+  const CW = 1920, CH = 1080;
+  const VB = { x: -70, y: -14, w: 1190, h: 708 };
+  const SCALE = Math.min(CW / VB.w, CH / VB.h);
+  const OX = (CW - VB.w * SCALE) / 2 - VB.x * SCALE, OY = (CH - VB.h * SCALE) / 2 - VB.y * SCALE;
+
+  function pitchImage() {
+    return new Promise((res, rej) => {
+      const s = document.createElementNS(NS, "svg");
+      s.setAttribute("xmlns", NS); s.setAttribute("viewBox", `${VB.x} ${VB.y} ${VB.w} ${VB.h}`);
+      s.setAttribute("width", Math.round(VB.w * SCALE)); s.setAttribute("height", Math.round(VB.h * SCALE));
+      const root = el("g", { "font-family": FONT }, s);
+      el("rect", { x: VB.x, y: VB.y, width: VB.w, height: VB.h, fill: board.opts.pitch === "green" ? "#2f6e3c" : "#ffffff" }, root);
+      drawPitch(el("g", {}, root), board.opts.pitch);
+      drawBanner(root, board.home, "home"); drawBanner(root, board.away, "away");
+      const url = URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(s)], { type: "image/svg+xml;charset=utf-8" }));
+      const img = new Image();
+      img.onload = () => { URL.revokeObjectURL(url); res(img); };
+      img.onerror = () => rej(new Error("pitch"));
+      img.src = url;
+    });
+  }
+
+  function cvLine(ctx, ln) {
+    ctx.save(); ctx.strokeStyle = ln.color; ctx.fillStyle = ln.color; ctx.lineWidth = 5; ctx.lineCap = "round"; ctx.lineJoin = "round";
+    if (ln.type === "arrow") {
+      const [a, b] = ln.pts; const ang = Math.atan2(b[1] - a[1], b[0] - a[0]); const hl = 22;
+      ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0] - Math.cos(ang) * hl * 0.8, b[1] - Math.sin(ang) * hl * 0.8); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(b[0], b[1]);
+      ctx.lineTo(b[0] - Math.cos(ang - 0.45) * hl, b[1] - Math.sin(ang - 0.45) * hl);
+      ctx.lineTo(b[0] - Math.cos(ang + 0.45) * hl, b[1] - Math.sin(ang + 0.45) * hl); ctx.closePath(); ctx.fill();
+    } else {
+      ctx.beginPath(); ln.pts.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.stroke();
+    }
+    ctx.restore();
+  }
+  function cvPiece(ctx, p, team, side, names, green) {
+    const dir = side === "home" ? 1 : -1; const fg = textColorOn(team.color);
+    ctx.save(); ctx.translate(p.x, p.y);
+    ctx.fillStyle = team.color;
+    ctx.beginPath(); ctx.moveTo(dir * 19, -8); ctx.lineTo(dir * 30, 0); ctx.lineTo(dir * 19, 8); ctx.closePath(); ctx.fill();
+    ctx.beginPath(); ctx.arc(0, 0, 19, 0, Math.PI * 2); ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = "#fff"; ctx.stroke();
+    ctx.fillStyle = fg; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.font = `800 ${String(p.no).length > 2 ? 14 : 17}px ${FONT}`; ctx.fillText(p.no, 0, 1);
+    if (names && p.name) {
+      ctx.font = `600 17px ${FONT}`; ctx.textBaseline = "alphabetic";
+      ctx.lineWidth = 5; ctx.lineJoin = "round"; ctx.strokeStyle = green ? "rgba(0,0,0,.55)" : "#fff"; ctx.strokeText(p.name, 0, 38);
+      ctx.fillStyle = green ? "#fff" : "#111"; ctx.fillText(p.name, 0, 38);
+    }
+    ctx.restore();
+  }
+  function cvFrame(ctx, bg, st, caption) {
+    ctx.fillStyle = board.opts.pitch === "green" ? "#2f6e3c" : "#ffffff"; ctx.fillRect(0, 0, CW, CH);
+    ctx.drawImage(bg, (CW - bg.width) / 2, (CH - bg.height) / 2);
+    ctx.save(); ctx.translate(OX, OY); ctx.scale(SCALE, SCALE);
+    (st.lines || []).forEach(ln => cvLine(ctx, ln));
+    const green = board.opts.pitch === "green";
+    ["home", "away"].forEach(side => {
+      const t = st.snap[side]; if (!t.show) return;
+      t.players.forEach(p => { if (!p.hidden) cvPiece(ctx, p, t, side, board.opts.names, green); });
+    });
+    if (st.snap.ball.show) {
+      const b = st.snap.ball; ctx.beginPath(); ctx.arc(b.x, b.y, 10, 0, Math.PI * 2); ctx.fillStyle = "#fff"; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = "#111"; ctx.stroke();
+      ctx.beginPath(); ctx.arc(b.x, b.y, 4, 0, Math.PI * 2); ctx.fillStyle = "#111"; ctx.fill();
+    }
+    ctx.restore();
+    if (caption && st.caption) {
+      ctx.save(); ctx.font = `700 44px ${FONT}`; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      const w = ctx.measureText(st.caption).width + 56, h = 72, x = CW / 2, y = CH - 70;
+      ctx.fillStyle = "rgba(20,28,24,.82)"; ctx.beginPath(); ctx.roundRect(x - w / 2, y - h / 2, w, h, 14); ctx.fill();
+      ctx.fillStyle = "#fff"; ctx.fillText(st.caption, x, y + 2); ctx.restore();
+    }
+  }
+
+  // --- 再生・保存 ---
+  let animRun = null;
+  function stopAnim() { if (animRun) { cancelAnimationFrame(animRun.raf); animRun = null; } }
+  async function playAnim(record) {
+    const a = anim();
+    if (a.frames.length < 2) { toast("コマが2つ以上いる"); return; }
+    stopAnim();
+    const dlg = $("#animDlg"), cv = $("#animCanvas"), ctx = cv.getContext("2d"), status = $("#animStatus");
+    if (!dlg.open) dlg.showModal();
+    $("#animSave").disabled = !!record; $("#animReplay").disabled = !!record;
+    let bg; try { bg = await pitchImage(); } catch (e) { toast("盤を描けなかった"); return; }
+    const tl = timeline(), caption = a.caption !== false;
+    let rec = null, chunks = [], mime = "";
+    if (record) {
+      if (!("MediaRecorder" in window) || !cv.captureStream) { toast("この端末では動画を作れない。パソコンのChromeで試してくれ"); $("#animSave").disabled = false; return; }
+      mime = ["video/mp4;codecs=avc1", "video/mp4", "video/webm;codecs=vp9", "video/webm"].find(m => MediaRecorder.isTypeSupported(m)) || "";
+      const stream = cv.captureStream(30);
+      rec = new MediaRecorder(stream, mime ? { mimeType: mime, videoBitsPerSecond: 10e6 } : { videoBitsPerSecond: 10e6 });
+      rec.ondataavailable = e => { if (e.data && e.data.size) chunks.push(e.data); };
+      rec.onstop = () => finishRecord(chunks, rec.mimeType || mime, tl.total);
+    }
+    cvFrame(ctx, bg, stateAt(tl, 0), caption);
+    const t0 = performance.now() + (record ? 300 : 0);
+    if (rec) rec.start(200);
+    const run = { raf: 0 };
+    animRun = run;
+    const tick = now => {
+      if (animRun !== run) return;
+      const t = Math.max(0, (now - t0) / 1000);
+      cvFrame(ctx, bg, stateAt(tl, Math.min(t, tl.total)), caption);
+      status.textContent = (record ? "動画を作っている… " : "") + `${fmtSec(Math.min(t, tl.total))} / ${fmtSec(tl.total)} 秒`;
+      if (t < tl.total + (record ? 0.4 : 0)) { run.raf = requestAnimationFrame(tick); }
+      else {
+        animRun = null; status.textContent = record ? "書き出し中…" : `${fmtSec(tl.total)} 秒・${a.frames.length}コマ`;
+        if (rec) rec.stop(); else { $("#animSave").disabled = false; $("#animReplay").disabled = false; }
+      }
+    };
+    run.raf = requestAnimationFrame(tick);
+  }
+  async function finishRecord(chunks, mime, total) {
+    $("#animSave").disabled = false; $("#animReplay").disabled = false;
+    if (!chunks.length) { $("#animStatus").textContent = "動画を作れなかった"; return; }
+    const ext = /mp4/.test(mime) ? "mp4" : "webm";
+    const blob = new Blob(chunks, { type: mime || "video/" + ext });
+    const fname = (board.title + "_動画").replace(/[\\/:*?"<>|\s]+/g, "_") + "." + ext;
+    const file = new File([blob], fname, { type: blob.type });
+    $("#animStatus").textContent = `${fmtSec(total)} 秒の動画（${ext.toUpperCase()}・${(blob.size / 1e6).toFixed(1)}MB）`;
+    const touch = matchMedia("(pointer:coarse)").matches;
+    if (touch && navigator.canShare && navigator.canShare({ files: [file] })) {
+      try { await navigator.share({ files: [file] }); return; } catch (e) { if (e.name === "AbortError") return; }
+    }
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = fname;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+    toast("動画を保存した");
+  }
+  $("#animPlay").addEventListener("click", () => playAnim(false));
+  $("#animExport").addEventListener("click", () => playAnim(true));
+  $("#animReplay").addEventListener("click", () => playAnim(false));
+  $("#animSave").addEventListener("click", () => playAnim(true));
+  $("#animClose").addEventListener("click", () => { stopAnim(); $("#animDlg").close(); });
+  $("#animDlg").addEventListener("close", stopAnim);
 
   // ---------- メニュー ----------
   $("#menuBtn").addEventListener("click", () => $("#menuDlg").showModal());

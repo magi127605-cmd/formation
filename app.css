@@ -65,3 +65,20 @@ dialog label.chk{flex-direction:row;color:var(--ink);font-size:15px}
 .dlgBtns{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
 
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1f2a24;color:#fff;padding:10px 16px;border-radius:999px;z-index:20;font-size:14px}
+
+/* 動画（コマ送り） */
+#frameName{flex:1}
+.frames{list-style:none;padding:0;margin:6px 0}
+.frames li{display:grid;grid-template-columns:1fr auto auto auto;gap:4px 6px;align-items:center;border-bottom:1px solid #eef0ec;padding:5px 0}
+.frames li .fName{grid-column:1/-1;border:0;background:transparent;padding:4px 2px;font-weight:600}
+.frames li .fName:focus{outline:1px solid var(--line);border-radius:6px;background:#fff}
+.frames li .fNum{display:inline-flex;align-items:center;gap:3px;font-size:12.5px;color:var(--sub)}
+.frames li .fNum input{width:54px;padding:3px 4px;text-align:right}
+.frames li .fOps{display:flex;gap:2px;justify-self:end}
+.frames li .fOps button{border:0;background:transparent;color:var(--sub);padding:3px 5px}
+.frames li .fOps button.go{color:var(--accent);font-weight:700}
+.frameBtns{flex-wrap:wrap;margin-top:8px}
+.animDlg{width:min(1000px,96vw);padding:10px}
+#animCanvas{width:100%;height:auto;display:block;border-radius:8px;background:#000}
+.animCtl{align-items:center}
+.animCtl .hint{flex:1;text-align:left}
