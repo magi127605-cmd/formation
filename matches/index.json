@@ -1,5 +1,11 @@
 [
   {
+    "id": "2026-10-31_mancity-brighton",
+    "file": "2026-10-31_mancity-brighton.json",
+    "title": "マンチェスター・シティ 対 ブライトン（プレミア第9節）",
+    "date": "2026-10-31"
+  },
+  {
     "id": "2026-10-18_brighton-palace",
     "file": "2026-10-18_brighton-palace.json",
     "title": "ブライトン 対 クリスタル・パレス（プレミア第7節）",
@@ -16,5 +22,65 @@
     "file": "sample-arsenal-leeds.json",
     "title": "見本：アーセナル 対 リーズ（送ってもらった図の写し）",
     "date": ""
+  },
+  {
+    "id": "haaland-360-01-palace17",
+    "file": "haaland-360-01-palace17.json",
+    "title": "ハーランド360 ①8/28 パレス17'（ヘッド（右からセメンヨのクロス））",
+    "date": "2026-08-28"
+  },
+  {
+    "id": "haaland-360-02-palace84",
+    "file": "haaland-360-02-palace84.json",
+    "title": "ハーランド360 ②8/28 パレス84'（縦に受けて左足（フォーデンの運び））",
+    "date": "2026-08-28"
+  },
+  {
+    "id": "haaland-360-03-coventry26",
+    "file": "haaland-360-03-coventry26.json",
+    "title": "ハーランド360 ③9/5 コヴェントリー26'（ヘッド（右からセメンヨのクロス））",
+    "date": "2026-09-05"
+  },
+  {
+    "id": "haaland-360-04-united60",
+    "file": "haaland-360-04-united60.json",
+    "title": "ハーランド360 ④9/13 ユナイテッド60'（低いクロスに合わせる（左からグヴァルディオル））",
+    "date": "2026-09-13"
+  },
+  {
+    "id": "haaland-360-05-sunderland81",
+    "file": "haaland-360-05-sunderland81.json",
+    "title": "ハーランド360 ⑤9/20 サンダーランド81'（低いクロスに合わせる（左からグヴァルディオル））",
+    "date": "2026-09-20"
+  },
+  {
+    "id": "haaland-360-06-liverpool65",
+    "file": "haaland-360-06-liverpool65.json",
+    "title": "ハーランド360 ⑥10/11 リヴァプール65'（折り返しを左足（ドクが左を抜く））",
+    "date": "2026-10-11"
+  },
+  {
+    "id": "haaland-360-07-ipswich34",
+    "file": "haaland-360-07-ipswich34.json",
+    "title": "ハーランド360 ⑦10/17 イプスウィッチ34'（ヘッド（コヴァチッチが箱の中へクリップ））",
+    "date": "2026-10-17"
+  },
+  {
+    "id": "haaland-360-08-ipswich69",
+    "file": "haaland-360-08-ipswich69.json",
+    "title": "ハーランド360 ⑧10/17 イプスウィッチ69'（抜け出して1人かわす（ンディアイのパス））",
+    "date": "2026-10-17"
+  },
+  {
+    "id": "haaland-360-09-villa52",
+    "file": "haaland-360-09-villa52.json",
+    "title": "ハーランド360 ⑨10/24 ヴィラ52'（ヘッド（右からンディアイのクロス・ファーポスト））",
+    "date": "2026-10-24"
+  },
+  {
+    "id": "haaland-360-10-finish-map",
+    "file": "haaland-360-10-finish-map.json",
+    "title": "ハーランド360 ⑩9ゴールのフィニッシュ位置（1枚）",
+    "date": "2026-10-24"
   }
 ]
