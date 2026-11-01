@@ -1,0 +1,1888 @@
+{
+ "v": 1,
+ "id": "haaland-360-02-palace84",
+ "title": "ハーランド360 ②8/28 パレス84'（縦に受けて左足（フォーデンの運び））",
+ "date": "2026-08-28",
+ "competition": "プレミア第2節（アウェイ）",
+ "venue": "セルハースト・パーク",
+ "source": {
+  "id": "haaland-360-02-palace84",
+  "title": "ハーランド360 ②8/28 パレス84'（縦に受けて左足（フォーデンの運び））",
+  "date": "2026-08-28",
+  "competition": "プレミア第2節（アウェイ）",
+  "venue": "セルハースト・パーク",
+  "home": {
+   "name": "マンチェスター・シティ",
+   "short": "MAN CITY",
+   "color": "#6cabdd",
+   "formation": "4-2-3-1",
+   "players": [
+    {
+     "no": 1,
+     "name": "ドンナルンマ",
+     "pos": "GK"
+    },
+    {
+     "no": "",
+     "name": "グヴァルディオル",
+     "pos": "左SB"
+    },
+    {
+     "no": 8,
+     "name": "コヴァチッチ",
+     "pos": "ボランチ"
+    },
+    {
+     "no": 7,
+     "name": "ンディアイ",
+     "pos": "右MF"
+    },
+    {
+     "no": 47,
+     "name": "フォーデン",
+     "pos": "トップ下"
+    },
+    {
+     "no": 11,
+     "name": "ドク",
+     "pos": "左MF"
+    },
+    {
+     "no": "",
+     "name": "セメンヨ",
+     "pos": "右MF"
+    },
+    {
+     "no": 9,
+     "name": "ハーランド",
+     "pos": "FW"
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    }
+   ]
+  },
+  "away": {
+   "name": "クリスタル・パレス",
+   "short": "PALACE",
+   "color": "#8d8d8d",
+   "formation": "4-4-2",
+   "players": [
+    {
+     "no": "",
+     "name": "ヘンダーソン",
+     "pos": "GK"
+    },
+    {
+     "no": "",
+     "name": "CB",
+     "pos": "CB"
+    },
+    {
+     "no": "",
+     "name": "CB",
+     "pos": "CB"
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    }
+   ]
+  }
+ },
+ "home": {
+  "name": "マンチェスター・シティ",
+  "short": "MAN CITY",
+  "color": "#6cabdd",
+  "formation": "4-2-3-1",
+  "show": true,
+  "players": [
+   {
+    "id": "h0",
+    "no": 1,
+    "name": "ドンナルンマ",
+    "pos": "GK",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h1",
+    "no": "",
+    "name": "グヴァルディオル",
+    "pos": "左SB",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h2",
+    "no": 8,
+    "name": "コヴァチッチ",
+    "pos": "ボランチ",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h3",
+    "no": 7,
+    "name": "ンディアイ",
+    "pos": "右MF",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h4",
+    "no": 47,
+    "name": "フォーデン",
+    "pos": "トップ下",
+    "x": 880,
+    "y": 395,
+    "hidden": false
+   },
+   {
+    "id": "h5",
+    "no": 11,
+    "name": "ドク",
+    "pos": "左MF",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h6",
+    "no": "",
+    "name": "セメンヨ",
+    "pos": "右MF",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h7",
+    "no": 9,
+    "name": "ハーランド",
+    "pos": "FW",
+    "x": 984,
+    "y": 417,
+    "hidden": false
+   },
+   {
+    "id": "h8",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h9",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h10",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   }
+  ]
+ },
+ "away": {
+  "name": "クリスタル・パレス",
+  "short": "PALACE",
+  "color": "#8d8d8d",
+  "formation": "4-4-2",
+  "show": true,
+  "players": [
+   {
+    "id": "a0",
+    "no": "",
+    "name": "ヘンダーソン",
+    "pos": "GK",
+    "x": 1035,
+    "y": 345,
+    "hidden": false
+   },
+   {
+    "id": "a1",
+    "no": "",
+    "name": "CB",
+    "pos": "CB",
+    "x": 965,
+    "y": 380,
+    "hidden": false
+   },
+   {
+    "id": "a2",
+    "no": "",
+    "name": "CB",
+    "pos": "CB",
+    "x": 960,
+    "y": 450,
+    "hidden": false
+   },
+   {
+    "id": "a3",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a4",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a5",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a6",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a7",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a8",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a9",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a10",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   }
+  ]
+ },
+ "ball": {
+  "x": 984,
+  "y": 417,
+  "show": true
+ },
+ "lines": [
+  {
+   "type": "arrow",
+   "color": "#111111",
+   "pts": [
+    [
+     880,
+     395
+    ],
+    [
+     984,
+     417
+    ]
+   ]
+  },
+  {
+   "type": "arrow",
+   "color": "#e53935",
+   "pts": [
+    [
+     925,
+     400
+    ],
+    [
+     984,
+     417
+    ]
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "name": "歩く：フォーデンが中央を運ぶ間（CBの肩口・推定）",
+   "snap": {
+    "home": {
+     "name": "マンチェスター・シティ",
+     "short": "MAN CITY",
+     "color": "#6cabdd",
+     "formation": "4-2-3-1",
+     "show": true,
+     "players": [
+      {
+       "id": "h0",
+       "no": 1,
+       "name": "ドンナルンマ",
+       "pos": "GK",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h1",
+       "no": "",
+       "name": "グヴァルディオル",
+       "pos": "左SB",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h2",
+       "no": 8,
+       "name": "コヴァチッチ",
+       "pos": "ボランチ",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h3",
+       "no": 7,
+       "name": "ンディアイ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h4",
+       "no": 47,
+       "name": "フォーデン",
+       "pos": "トップ下",
+       "x": 820,
+       "y": 390,
+       "hidden": false
+      },
+      {
+       "id": "h5",
+       "no": 11,
+       "name": "ドク",
+       "pos": "左MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h6",
+       "no": "",
+       "name": "セメンヨ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h7",
+       "no": 9,
+       "name": "ハーランド",
+       "pos": "FW",
+       "x": 925,
+       "y": 400,
+       "hidden": false
+      },
+      {
+       "id": "h8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "away": {
+     "name": "クリスタル・パレス",
+     "short": "PALACE",
+     "color": "#8d8d8d",
+     "formation": "4-4-2",
+     "show": true,
+     "players": [
+      {
+       "id": "a0",
+       "no": "",
+       "name": "ヘンダーソン",
+       "pos": "GK",
+       "x": 1035,
+       "y": 340,
+       "hidden": false
+      },
+      {
+       "id": "a1",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 945,
+       "y": 370,
+       "hidden": false
+      },
+      {
+       "id": "a2",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 930,
+       "y": 430,
+       "hidden": false
+      },
+      {
+       "id": "a3",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a4",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a5",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a6",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a7",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "ball": {
+     "x": 820,
+     "y": 390,
+     "show": true
+    },
+    "lines": []
+   }
+  },
+  {
+   "name": "フォーデンが前を向いた瞬間に外へ逃げる",
+   "snap": {
+    "home": {
+     "name": "マンチェスター・シティ",
+     "short": "MAN CITY",
+     "color": "#6cabdd",
+     "formation": "4-2-3-1",
+     "show": true,
+     "players": [
+      {
+       "id": "h0",
+       "no": 1,
+       "name": "ドンナルンマ",
+       "pos": "GK",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h1",
+       "no": "",
+       "name": "グヴァルディオル",
+       "pos": "左SB",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h2",
+       "no": 8,
+       "name": "コヴァチッチ",
+       "pos": "ボランチ",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h3",
+       "no": 7,
+       "name": "ンディアイ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h4",
+       "no": 47,
+       "name": "フォーデン",
+       "pos": "トップ下",
+       "x": 880,
+       "y": 395,
+       "hidden": false
+      },
+      {
+       "id": "h5",
+       "no": 11,
+       "name": "ドク",
+       "pos": "左MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h6",
+       "no": "",
+       "name": "セメンヨ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h7",
+       "no": 9,
+       "name": "ハーランド",
+       "pos": "FW",
+       "x": 950,
+       "y": 410,
+       "hidden": false
+      },
+      {
+       "id": "h8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "away": {
+     "name": "クリスタル・パレス",
+     "short": "PALACE",
+     "color": "#8d8d8d",
+     "formation": "4-4-2",
+     "show": true,
+     "players": [
+      {
+       "id": "a0",
+       "no": "",
+       "name": "ヘンダーソン",
+       "pos": "GK",
+       "x": 1035,
+       "y": 340,
+       "hidden": false
+      },
+      {
+       "id": "a1",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 955,
+       "y": 375,
+       "hidden": false
+      },
+      {
+       "id": "a2",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 945,
+       "y": 435,
+       "hidden": false
+      },
+      {
+       "id": "a3",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a4",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a5",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a6",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a7",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "ball": {
+     "x": 880,
+     "y": 395,
+     "show": true
+    },
+    "lines": [
+     {
+      "type": "arrow",
+      "color": "#111111",
+      "pts": [
+       [
+        880,
+        395
+       ],
+       [
+        984,
+        417
+       ]
+      ]
+     },
+     {
+      "type": "arrow",
+      "color": "#e53935",
+      "pts": [
+       [
+        925,
+        400
+       ],
+       [
+        984,
+        417
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "name": "受けてゴール天井へ叩き込む",
+   "snap": {
+    "home": {
+     "name": "マンチェスター・シティ",
+     "short": "MAN CITY",
+     "color": "#6cabdd",
+     "formation": "4-2-3-1",
+     "show": true,
+     "players": [
+      {
+       "id": "h0",
+       "no": 1,
+       "name": "ドンナルンマ",
+       "pos": "GK",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h1",
+       "no": "",
+       "name": "グヴァルディオル",
+       "pos": "左SB",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h2",
+       "no": 8,
+       "name": "コヴァチッチ",
+       "pos": "ボランチ",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h3",
+       "no": 7,
+       "name": "ンディアイ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h4",
+       "no": 47,
+       "name": "フォーデン",
+       "pos": "トップ下",
+       "x": 880,
+       "y": 395,
+       "hidden": false
+      },
+      {
+       "id": "h5",
+       "no": 11,
+       "name": "ドク",
+       "pos": "左MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h6",
+       "no": "",
+       "name": "セメンヨ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h7",
+       "no": 9,
+       "name": "ハーランド",
+       "pos": "FW",
+       "x": 984,
+       "y": 417,
+       "hidden": false
+      },
+      {
+       "id": "h8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "away": {
+     "name": "クリスタル・パレス",
+     "short": "PALACE",
+     "color": "#8d8d8d",
+     "formation": "4-4-2",
+     "show": true,
+     "players": [
+      {
+       "id": "a0",
+       "no": "",
+       "name": "ヘンダーソン",
+       "pos": "GK",
+       "x": 1035,
+       "y": 345,
+       "hidden": false
+      },
+      {
+       "id": "a1",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 965,
+       "y": 380,
+       "hidden": false
+      },
+      {
+       "id": "a2",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 960,
+       "y": 450,
+       "hidden": false
+      },
+      {
+       "id": "a3",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a4",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a5",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a6",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a7",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "ball": {
+     "x": 984,
+     "y": 417,
+     "show": true
+    },
+    "lines": [
+     {
+      "type": "arrow",
+      "color": "#111111",
+      "pts": [
+       [
+        880,
+        395
+       ],
+       [
+        984,
+        417
+       ]
+      ]
+     },
+     {
+      "type": "arrow",
+      "color": "#e53935",
+      "pts": [
+       [
+        925,
+        400
+       ],
+       [
+        984,
+        417
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "memo": "②8/28 パレス84' 縦に受けて左足（フォーデンの運び）。フィニッシュ位置はUnderstatの座標。歩く位置・供給元・DF・GKの位置は台帳の文章からの推定。コマ送りを使うには、メニュー「盤の読み込み（ファイル）」でこのファイルを読む（試合の選択からだと並びだけになる）。根拠は projects/football-content/haaland-360/scenes-notes.md",
+ "opts": {
+  "names": true,
+  "pitch": "white"
+ },
+ "anim": {
+  "frames": [
+   {
+    "name": "②8/28 パレス84' 歩く：フォーデンが中央を運ぶ間（CBの肩口・推定）",
+    "dur": 0,
+    "hold": 1.5,
+    "snap": {
+     "home": {
+      "name": "マンチェスター・シティ",
+      "short": "MAN CITY",
+      "color": "#6cabdd",
+      "formation": "4-2-3-1",
+      "show": true,
+      "players": [
+       {
+        "id": "h0",
+        "no": 1,
+        "name": "ドンナルンマ",
+        "pos": "GK",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h1",
+        "no": "",
+        "name": "グヴァルディオル",
+        "pos": "左SB",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h2",
+        "no": 8,
+        "name": "コヴァチッチ",
+        "pos": "ボランチ",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h3",
+        "no": 7,
+        "name": "ンディアイ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h4",
+        "no": 47,
+        "name": "フォーデン",
+        "pos": "トップ下",
+        "x": 820,
+        "y": 390,
+        "hidden": false
+       },
+       {
+        "id": "h5",
+        "no": 11,
+        "name": "ドク",
+        "pos": "左MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h6",
+        "no": "",
+        "name": "セメンヨ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h7",
+        "no": 9,
+        "name": "ハーランド",
+        "pos": "FW",
+        "x": 925,
+        "y": 400,
+        "hidden": false
+       },
+       {
+        "id": "h8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "away": {
+      "name": "クリスタル・パレス",
+      "short": "PALACE",
+      "color": "#8d8d8d",
+      "formation": "4-4-2",
+      "show": true,
+      "players": [
+       {
+        "id": "a0",
+        "no": "",
+        "name": "ヘンダーソン",
+        "pos": "GK",
+        "x": 1035,
+        "y": 340,
+        "hidden": false
+       },
+       {
+        "id": "a1",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 945,
+        "y": 370,
+        "hidden": false
+       },
+       {
+        "id": "a2",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 930,
+        "y": 430,
+        "hidden": false
+       },
+       {
+        "id": "a3",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a4",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a5",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a6",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a7",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "ball": {
+      "x": 820,
+      "y": 390,
+      "show": true
+     },
+     "lines": []
+    }
+   },
+   {
+    "name": "②8/28 パレス84' フォーデンが前を向いた瞬間に外へ逃げる",
+    "dur": 1.2,
+    "hold": 1.2,
+    "snap": {
+     "home": {
+      "name": "マンチェスター・シティ",
+      "short": "MAN CITY",
+      "color": "#6cabdd",
+      "formation": "4-2-3-1",
+      "show": true,
+      "players": [
+       {
+        "id": "h0",
+        "no": 1,
+        "name": "ドンナルンマ",
+        "pos": "GK",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h1",
+        "no": "",
+        "name": "グヴァルディオル",
+        "pos": "左SB",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h2",
+        "no": 8,
+        "name": "コヴァチッチ",
+        "pos": "ボランチ",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h3",
+        "no": 7,
+        "name": "ンディアイ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h4",
+        "no": 47,
+        "name": "フォーデン",
+        "pos": "トップ下",
+        "x": 880,
+        "y": 395,
+        "hidden": false
+       },
+       {
+        "id": "h5",
+        "no": 11,
+        "name": "ドク",
+        "pos": "左MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h6",
+        "no": "",
+        "name": "セメンヨ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h7",
+        "no": 9,
+        "name": "ハーランド",
+        "pos": "FW",
+        "x": 950,
+        "y": 410,
+        "hidden": false
+       },
+       {
+        "id": "h8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "away": {
+      "name": "クリスタル・パレス",
+      "short": "PALACE",
+      "color": "#8d8d8d",
+      "formation": "4-4-2",
+      "show": true,
+      "players": [
+       {
+        "id": "a0",
+        "no": "",
+        "name": "ヘンダーソン",
+        "pos": "GK",
+        "x": 1035,
+        "y": 340,
+        "hidden": false
+       },
+       {
+        "id": "a1",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 955,
+        "y": 375,
+        "hidden": false
+       },
+       {
+        "id": "a2",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 945,
+        "y": 435,
+        "hidden": false
+       },
+       {
+        "id": "a3",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a4",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a5",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a6",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a7",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "ball": {
+      "x": 880,
+      "y": 395,
+      "show": true
+     },
+     "lines": [
+      {
+       "type": "arrow",
+       "color": "#111111",
+       "pts": [
+        [
+         880,
+         395
+        ],
+        [
+         984,
+         417
+        ]
+       ]
+      },
+      {
+       "type": "arrow",
+       "color": "#e53935",
+       "pts": [
+        [
+         925,
+         400
+        ],
+        [
+         984,
+         417
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "name": "②8/28 パレス84' 受けてゴール天井へ叩き込む",
+    "dur": 1.2,
+    "hold": 2.0,
+    "snap": {
+     "home": {
+      "name": "マンチェスター・シティ",
+      "short": "MAN CITY",
+      "color": "#6cabdd",
+      "formation": "4-2-3-1",
+      "show": true,
+      "players": [
+       {
+        "id": "h0",
+        "no": 1,
+        "name": "ドンナルンマ",
+        "pos": "GK",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h1",
+        "no": "",
+        "name": "グヴァルディオル",
+        "pos": "左SB",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h2",
+        "no": 8,
+        "name": "コヴァチッチ",
+        "pos": "ボランチ",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h3",
+        "no": 7,
+        "name": "ンディアイ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h4",
+        "no": 47,
+        "name": "フォーデン",
+        "pos": "トップ下",
+        "x": 880,
+        "y": 395,
+        "hidden": false
+       },
+       {
+        "id": "h5",
+        "no": 11,
+        "name": "ドク",
+        "pos": "左MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h6",
+        "no": "",
+        "name": "セメンヨ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h7",
+        "no": 9,
+        "name": "ハーランド",
+        "pos": "FW",
+        "x": 984,
+        "y": 417,
+        "hidden": false
+       },
+       {
+        "id": "h8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "away": {
+      "name": "クリスタル・パレス",
+      "short": "PALACE",
+      "color": "#8d8d8d",
+      "formation": "4-4-2",
+      "show": true,
+      "players": [
+       {
+        "id": "a0",
+        "no": "",
+        "name": "ヘンダーソン",
+        "pos": "GK",
+        "x": 1035,
+        "y": 345,
+        "hidden": false
+       },
+       {
+        "id": "a1",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 965,
+        "y": 380,
+        "hidden": false
+       },
+       {
+        "id": "a2",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 960,
+        "y": 450,
+        "hidden": false
+       },
+       {
+        "id": "a3",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a4",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a5",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a6",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a7",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "ball": {
+      "x": 984,
+      "y": 417,
+      "show": true
+     },
+     "lines": [
+      {
+       "type": "arrow",
+       "color": "#111111",
+       "pts": [
+        [
+         880,
+         395
+        ],
+        [
+         984,
+         417
+        ]
+       ]
+      },
+      {
+       "type": "arrow",
+       "color": "#e53935",
+       "pts": [
+        [
+         925,
+         400
+        ],
+        [
+         984,
+         417
+        ]
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "caption": true
+ }
+}

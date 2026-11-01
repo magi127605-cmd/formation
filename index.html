@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#1f2a24">
-<link rel="stylesheet" href="app.css?v=1.1.0">
+<link rel="stylesheet" href="app.css?v=1.2.0">
 </head>
 <body>
 <header class="top">
@@ -33,6 +33,7 @@
   <button id="undoBtn">↶ 戻す</button>
   <button id="clearLinesBtn">線を全部消す</button>
   <button id="resetBtn">並びを初期に</button>
+  <button id="subsBtn">🔁 交代</button>
   <button id="pngBtn" class="primary">画像で保存</button>
 </div>
 
@@ -112,6 +113,16 @@
   </form>
 </dialog>
 
+<dialog id="subsDlg">
+  <form method="dialog">
+    <h3>交代を反映</h3>
+    <p class="hint">出た選手の駒が、今いる場所のまま入った選手に変わる。線・場面・コマはそのまま。間違えたら「↶ 戻す」。</p>
+    <button type="button" id="subsAll" class="primary">全部反映</button>
+    <ul id="subsList" class="subs"></ul>
+    <div class="dlgBtns"><button value="close" class="ghost">閉じる</button></div>
+  </form>
+</dialog>
+
 <dialog id="animDlg" class="animDlg">
   <canvas id="animCanvas" width="1920" height="1080"></canvas>
   <div class="dlgBtns animCtl">
@@ -124,7 +135,7 @@
 
 <div id="toast" class="toast" hidden></div>
 
-<script src="js/formations.js?v=1.1.0"></script>
-<script src="js/app.js?v=1.1.0"></script>
+<script src="js/formations.js?v=1.2.0"></script>
+<script src="js/app.js?v=1.2.0"></script>
 </body>
 </html>

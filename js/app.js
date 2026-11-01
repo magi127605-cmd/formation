@@ -5,7 +5,7 @@
   const LS_PREFIX = "fb:board:";
   const LS_LOCAL = "fb:local";   // この端末で作った盤（白紙・貼り付け）の一覧
   const LS_LAST = "fb:last";
-  const VERSION = "1.1.0";
+  const VERSION = "1.2.0";
 
   const $ = s => document.querySelector(s);
   const svg = $("#board");
@@ -496,6 +496,75 @@
     board.home = fresh.home; board.away = fresh.away; board.ball = { ...fresh.ball, show: board.ball.show };
     curScene = -1; save(); syncPanel(); render();
   });
+
+  // ---------- 交代 ----------
+  // 試合データの home.subs / away.subs = [{ min, out(出る背番号), in: { no, name, pos } }]
+  // 保存済みの盤には手を付けず、交代だけ試合ファイルから読み直す（盤の source は開いた時の写しで古いことがある）
+  let subsData = [];
+  async function loadSubs() {
+    let src = board.source;
+    const m = index.find(x => x.id === board.id);
+    if (m) {
+      try { src = await (await fetch("matches/" + m.file + "?t=" + Date.now())).json(); } catch (e) {}
+    }
+    const list = [];
+    ["home", "away"].forEach(side => (src?.[side]?.subs || []).forEach(s => list.push({ ...s, side })));
+    const minNum = s => { const [a, b] = String(s.min).split("+"); return +a + (+b || 0) / 100; };
+    return list.sort((a, b) => minNum(a) - minNum(b));
+  }
+  const sameNo = (a, b) => String(a).trim() === String(b).trim();
+  const isApplied = s => board[s.side].players.some(p => sameNo(p.no, s.in.no) && p.name === s.in.name);
+  function applySub(s) {
+    if (isApplied(s)) return false;
+    const p = board[s.side].players.find(q => sameNo(q.no, s.out));
+    if (!p) return false;
+    p.no = String(s.in.no); p.name = s.in.name; p.pos = s.in.pos || `${s.min}' 途中出場（${s.outName || p.name}と交代）`; p.hidden = false;
+    return true;
+  }
+  function outName(s) {
+    const p = board[s.side].players.find(q => sameNo(q.no, s.out));
+    return p ? p.name : (s.outName || "");
+  }
+  function renderSubs() {
+    const ul = $("#subsList");
+    ul.innerHTML = "";
+    subsData.forEach(s => {
+      const li = document.createElement("li");
+      const done = isApplied(s);
+      if (done) li.className = "done";
+      const min = document.createElement("span"); min.className = "sMin"; min.textContent = s.min + "'";
+      const txt = document.createElement("span"); txt.className = "sTxt";
+      txt.innerHTML = `${s.out} ${s.outName || outName(s)} → <b>${s.in.no} ${s.in.name}</b><small>${board[s.side].name}${s.in.pos ? "・" + s.in.pos : ""}</small>`;
+      const b = document.createElement("button");
+      b.textContent = done ? "済" : "反映"; b.disabled = done;
+      b.onclick = () => {
+        pushHistory();
+        if (applySub(s)) { save(); render(); toast(`${s.in.name} が入った`); }
+        else { history.pop(); toast(`${s.out}番が盤にいない（番号を直した？）`); }
+        renderSubs();
+      };
+      li.append(min, txt, b); ul.appendChild(li);
+    });
+    $("#subsAll").disabled = subsData.every(isApplied);
+  }
+  $("#subsBtn").addEventListener("click", async () => {
+    subsData = await loadSubs();
+    if (!subsData.length) { toast("この試合の交代データはまだない"); return; }
+    if (!board.subsSeen && !confirm("交代が分かる＝試合のネタバレになる。見る？")) return;
+    board.subsSeen = true; save();
+    // 外す前の名前を控える（反映した後も一覧で「誰が出たか」を出すため）
+    subsData.forEach(s => { s.outName = s.outName || outName(s); });
+    renderSubs(); $("#subsDlg").showModal();
+  });
+  $("#subsAll").addEventListener("click", () => {
+    pushHistory();
+    let n = 0, miss = 0;
+    subsData.forEach(s => { if (isApplied(s)) return; applySub(s) ? n++ : miss++; });
+    if (!n) history.pop();
+    save(); render(); renderSubs();
+    toast(`${n}人を入れ替えた` + (miss ? `（${miss}人は番号が見つからず）` : ""));
+  });
+
   document.addEventListener("keydown", e => {
     if ((e.ctrlKey || e.metaKey) && e.key === "z" && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); undo(); }
   });

@@ -82,3 +82,10 @@ dialog label.chk{flex-direction:row;color:var(--ink);font-size:15px}
 #animCanvas{width:100%;height:auto;display:block;border-radius:8px;background:#000}
 .animCtl{align-items:center}
 .animCtl .hint{flex:1;text-align:left}
+.subs{list-style:none;padding:0;margin:8px 0}
+.subs li{display:flex;gap:8px;align-items:center;border-bottom:1px solid #eef0ec;padding:6px 0;font-size:14px}
+.subs li .sMin{min-width:38px;color:var(--sub);font-variant-numeric:tabular-nums}
+.subs li .sTxt{flex:1}
+.subs li .sTxt small{display:block;color:var(--sub);font-size:12px}
+.subs li.done .sTxt{color:var(--sub)}
+#subsAll{width:100%;margin:4px 0}

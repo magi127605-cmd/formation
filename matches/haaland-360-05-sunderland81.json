@@ -1,0 +1,1888 @@
+{
+ "v": 1,
+ "id": "haaland-360-05-sunderland81",
+ "title": "ハーランド360 ⑤9/20 サンダーランド81'（低いクロスに合わせる（左からグヴァルディオル））",
+ "date": "2026-09-20",
+ "competition": "プレミア第5節（ホーム）",
+ "venue": "エティハド・スタジアム",
+ "source": {
+  "id": "haaland-360-05-sunderland81",
+  "title": "ハーランド360 ⑤9/20 サンダーランド81'（低いクロスに合わせる（左からグヴァルディオル））",
+  "date": "2026-09-20",
+  "competition": "プレミア第5節（ホーム）",
+  "venue": "エティハド・スタジアム",
+  "home": {
+   "name": "マンチェスター・シティ",
+   "short": "MAN CITY",
+   "color": "#6cabdd",
+   "formation": "4-2-3-1",
+   "players": [
+    {
+     "no": 1,
+     "name": "ドンナルンマ",
+     "pos": "GK"
+    },
+    {
+     "no": "",
+     "name": "グヴァルディオル",
+     "pos": "左SB"
+    },
+    {
+     "no": 8,
+     "name": "コヴァチッチ",
+     "pos": "ボランチ"
+    },
+    {
+     "no": 7,
+     "name": "ンディアイ",
+     "pos": "右MF"
+    },
+    {
+     "no": 47,
+     "name": "フォーデン",
+     "pos": "トップ下"
+    },
+    {
+     "no": 11,
+     "name": "ドク",
+     "pos": "左MF"
+    },
+    {
+     "no": "",
+     "name": "セメンヨ",
+     "pos": "右MF"
+    },
+    {
+     "no": 9,
+     "name": "ハーランド",
+     "pos": "FW"
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    }
+   ]
+  },
+  "away": {
+   "name": "サンダーランド",
+   "short": "SUNDERLAND",
+   "color": "#8d8d8d",
+   "formation": "4-4-2",
+   "players": [
+    {
+     "no": "",
+     "name": "GK",
+     "pos": "GK"
+    },
+    {
+     "no": "",
+     "name": "CB",
+     "pos": "CB"
+    },
+    {
+     "no": "",
+     "name": "CB",
+     "pos": "CB"
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    },
+    {
+     "no": "",
+     "name": "",
+     "pos": ""
+    }
+   ]
+  }
+ },
+ "home": {
+  "name": "マンチェスター・シティ",
+  "short": "MAN CITY",
+  "color": "#6cabdd",
+  "formation": "4-2-3-1",
+  "show": true,
+  "players": [
+   {
+    "id": "h0",
+    "no": 1,
+    "name": "ドンナルンマ",
+    "pos": "GK",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h1",
+    "no": "",
+    "name": "グヴァルディオル",
+    "pos": "左SB",
+    "x": 1020,
+    "y": 180,
+    "hidden": false
+   },
+   {
+    "id": "h2",
+    "no": 8,
+    "name": "コヴァチッチ",
+    "pos": "ボランチ",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h3",
+    "no": 7,
+    "name": "ンディアイ",
+    "pos": "右MF",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h4",
+    "no": 47,
+    "name": "フォーデン",
+    "pos": "トップ下",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h5",
+    "no": 11,
+    "name": "ドク",
+    "pos": "左MF",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h6",
+    "no": "",
+    "name": "セメンヨ",
+    "pos": "右MF",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h7",
+    "no": 9,
+    "name": "ハーランド",
+    "pos": "FW",
+    "x": 1015,
+    "y": 318,
+    "hidden": false
+   },
+   {
+    "id": "h8",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h9",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "h10",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   }
+  ]
+ },
+ "away": {
+  "name": "サンダーランド",
+  "short": "SUNDERLAND",
+  "color": "#8d8d8d",
+  "formation": "4-4-2",
+  "show": true,
+  "players": [
+   {
+    "id": "a0",
+    "no": "",
+    "name": "GK",
+    "pos": "GK",
+    "x": 1035,
+    "y": 330,
+    "hidden": false
+   },
+   {
+    "id": "a1",
+    "no": "",
+    "name": "CB",
+    "pos": "CB",
+    "x": 1010,
+    "y": 290,
+    "hidden": false
+   },
+   {
+    "id": "a2",
+    "no": "",
+    "name": "CB",
+    "pos": "CB",
+    "x": 995,
+    "y": 355,
+    "hidden": false
+   },
+   {
+    "id": "a3",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a4",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a5",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a6",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a7",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a8",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a9",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   },
+   {
+    "id": "a10",
+    "no": "",
+    "name": "",
+    "pos": "",
+    "x": -300,
+    "y": 340,
+    "hidden": true
+   }
+  ]
+ },
+ "ball": {
+  "x": 1015,
+  "y": 318,
+  "show": true
+ },
+ "lines": [
+  {
+   "type": "arrow",
+   "color": "#111111",
+   "pts": [
+    [
+     1020,
+     180
+    ],
+    [
+     1015,
+     318
+    ]
+   ]
+  },
+  {
+   "type": "arrow",
+   "color": "#1e88e5",
+   "pts": [
+    [
+     960,
+     345
+    ],
+    [
+     1015,
+     318
+    ]
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "name": "歩く：ドクの隙間パスをグヴァルディオルが受けた所（推定）",
+   "snap": {
+    "home": {
+     "name": "マンチェスター・シティ",
+     "short": "MAN CITY",
+     "color": "#6cabdd",
+     "formation": "4-2-3-1",
+     "show": true,
+     "players": [
+      {
+       "id": "h0",
+       "no": 1,
+       "name": "ドンナルンマ",
+       "pos": "GK",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h1",
+       "no": "",
+       "name": "グヴァルディオル",
+       "pos": "左SB",
+       "x": 990,
+       "y": 150,
+       "hidden": false
+      },
+      {
+       "id": "h2",
+       "no": 8,
+       "name": "コヴァチッチ",
+       "pos": "ボランチ",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h3",
+       "no": 7,
+       "name": "ンディアイ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h4",
+       "no": 47,
+       "name": "フォーデン",
+       "pos": "トップ下",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h5",
+       "no": 11,
+       "name": "ドク",
+       "pos": "左MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h6",
+       "no": "",
+       "name": "セメンヨ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h7",
+       "no": 9,
+       "name": "ハーランド",
+       "pos": "FW",
+       "x": 960,
+       "y": 345,
+       "hidden": false
+      },
+      {
+       "id": "h8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "away": {
+     "name": "サンダーランド",
+     "short": "SUNDERLAND",
+     "color": "#8d8d8d",
+     "formation": "4-4-2",
+     "show": true,
+     "players": [
+      {
+       "id": "a0",
+       "no": "",
+       "name": "GK",
+       "pos": "GK",
+       "x": 1035,
+       "y": 340,
+       "hidden": false
+      },
+      {
+       "id": "a1",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 985,
+       "y": 310,
+       "hidden": false
+      },
+      {
+       "id": "a2",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 975,
+       "y": 370,
+       "hidden": false
+      },
+      {
+       "id": "a3",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a4",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a5",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a6",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a7",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "ball": {
+     "x": 990,
+     "y": 150,
+     "show": true
+    },
+    "lines": []
+   }
+  },
+  {
+   "name": "ゴール前を横切る低いクロスが出る瞬間",
+   "snap": {
+    "home": {
+     "name": "マンチェスター・シティ",
+     "short": "MAN CITY",
+     "color": "#6cabdd",
+     "formation": "4-2-3-1",
+     "show": true,
+     "players": [
+      {
+       "id": "h0",
+       "no": 1,
+       "name": "ドンナルンマ",
+       "pos": "GK",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h1",
+       "no": "",
+       "name": "グヴァルディオル",
+       "pos": "左SB",
+       "x": 1020,
+       "y": 180,
+       "hidden": false
+      },
+      {
+       "id": "h2",
+       "no": 8,
+       "name": "コヴァチッチ",
+       "pos": "ボランチ",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h3",
+       "no": 7,
+       "name": "ンディアイ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h4",
+       "no": 47,
+       "name": "フォーデン",
+       "pos": "トップ下",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h5",
+       "no": 11,
+       "name": "ドク",
+       "pos": "左MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h6",
+       "no": "",
+       "name": "セメンヨ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h7",
+       "no": 9,
+       "name": "ハーランド",
+       "pos": "FW",
+       "x": 985,
+       "y": 330,
+       "hidden": false
+      },
+      {
+       "id": "h8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "away": {
+     "name": "サンダーランド",
+     "short": "SUNDERLAND",
+     "color": "#8d8d8d",
+     "formation": "4-4-2",
+     "show": true,
+     "players": [
+      {
+       "id": "a0",
+       "no": "",
+       "name": "GK",
+       "pos": "GK",
+       "x": 1035,
+       "y": 340,
+       "hidden": false
+      },
+      {
+       "id": "a1",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 1000,
+       "y": 300,
+       "hidden": false
+      },
+      {
+       "id": "a2",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 985,
+       "y": 360,
+       "hidden": false
+      },
+      {
+       "id": "a3",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a4",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a5",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a6",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a7",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "ball": {
+     "x": 1020,
+     "y": 180,
+     "show": true
+    },
+    "lines": [
+     {
+      "type": "arrow",
+      "color": "#111111",
+      "pts": [
+       [
+        1020,
+        180
+       ],
+       [
+        1015,
+        318
+       ]
+      ]
+     },
+     {
+      "type": "arrow",
+      "color": "#1e88e5",
+      "pts": [
+       [
+        960,
+        345
+       ],
+       [
+        1015,
+        318
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "name": "合わせて5-3",
+   "snap": {
+    "home": {
+     "name": "マンチェスター・シティ",
+     "short": "MAN CITY",
+     "color": "#6cabdd",
+     "formation": "4-2-3-1",
+     "show": true,
+     "players": [
+      {
+       "id": "h0",
+       "no": 1,
+       "name": "ドンナルンマ",
+       "pos": "GK",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h1",
+       "no": "",
+       "name": "グヴァルディオル",
+       "pos": "左SB",
+       "x": 1020,
+       "y": 180,
+       "hidden": false
+      },
+      {
+       "id": "h2",
+       "no": 8,
+       "name": "コヴァチッチ",
+       "pos": "ボランチ",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h3",
+       "no": 7,
+       "name": "ンディアイ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h4",
+       "no": 47,
+       "name": "フォーデン",
+       "pos": "トップ下",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h5",
+       "no": 11,
+       "name": "ドク",
+       "pos": "左MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h6",
+       "no": "",
+       "name": "セメンヨ",
+       "pos": "右MF",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h7",
+       "no": 9,
+       "name": "ハーランド",
+       "pos": "FW",
+       "x": 1015,
+       "y": 318,
+       "hidden": false
+      },
+      {
+       "id": "h8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "h10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "away": {
+     "name": "サンダーランド",
+     "short": "SUNDERLAND",
+     "color": "#8d8d8d",
+     "formation": "4-4-2",
+     "show": true,
+     "players": [
+      {
+       "id": "a0",
+       "no": "",
+       "name": "GK",
+       "pos": "GK",
+       "x": 1035,
+       "y": 330,
+       "hidden": false
+      },
+      {
+       "id": "a1",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 1010,
+       "y": 290,
+       "hidden": false
+      },
+      {
+       "id": "a2",
+       "no": "",
+       "name": "CB",
+       "pos": "CB",
+       "x": 995,
+       "y": 355,
+       "hidden": false
+      },
+      {
+       "id": "a3",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a4",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a5",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a6",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a7",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a8",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a9",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      },
+      {
+       "id": "a10",
+       "no": "",
+       "name": "",
+       "pos": "",
+       "x": -300,
+       "y": 340,
+       "hidden": true
+      }
+     ]
+    },
+    "ball": {
+     "x": 1015,
+     "y": 318,
+     "show": true
+    },
+    "lines": [
+     {
+      "type": "arrow",
+      "color": "#111111",
+      "pts": [
+       [
+        1020,
+        180
+       ],
+       [
+        1015,
+        318
+       ]
+      ]
+     },
+     {
+      "type": "arrow",
+      "color": "#1e88e5",
+      "pts": [
+       [
+        960,
+        345
+       ],
+       [
+        1015,
+        318
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "memo": "⑤9/20 サンダーランド81' 低いクロスに合わせる（左からグヴァルディオル）。フィニッシュ位置はUnderstatの座標。歩く位置・供給元・DF・GKの位置は台帳の文章からの推定。コマ送りを使うには、メニュー「盤の読み込み（ファイル）」でこのファイルを読む（試合の選択からだと並びだけになる）。根拠は projects/football-content/haaland-360/scenes-notes.md",
+ "opts": {
+  "names": true,
+  "pitch": "white"
+ },
+ "anim": {
+  "frames": [
+   {
+    "name": "⑤9/20 サンダーランド81' 歩く：ドクの隙間パスをグヴァルディオルが受けた所（推定）",
+    "dur": 0,
+    "hold": 1.5,
+    "snap": {
+     "home": {
+      "name": "マンチェスター・シティ",
+      "short": "MAN CITY",
+      "color": "#6cabdd",
+      "formation": "4-2-3-1",
+      "show": true,
+      "players": [
+       {
+        "id": "h0",
+        "no": 1,
+        "name": "ドンナルンマ",
+        "pos": "GK",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h1",
+        "no": "",
+        "name": "グヴァルディオル",
+        "pos": "左SB",
+        "x": 990,
+        "y": 150,
+        "hidden": false
+       },
+       {
+        "id": "h2",
+        "no": 8,
+        "name": "コヴァチッチ",
+        "pos": "ボランチ",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h3",
+        "no": 7,
+        "name": "ンディアイ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h4",
+        "no": 47,
+        "name": "フォーデン",
+        "pos": "トップ下",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h5",
+        "no": 11,
+        "name": "ドク",
+        "pos": "左MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h6",
+        "no": "",
+        "name": "セメンヨ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h7",
+        "no": 9,
+        "name": "ハーランド",
+        "pos": "FW",
+        "x": 960,
+        "y": 345,
+        "hidden": false
+       },
+       {
+        "id": "h8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "away": {
+      "name": "サンダーランド",
+      "short": "SUNDERLAND",
+      "color": "#8d8d8d",
+      "formation": "4-4-2",
+      "show": true,
+      "players": [
+       {
+        "id": "a0",
+        "no": "",
+        "name": "GK",
+        "pos": "GK",
+        "x": 1035,
+        "y": 340,
+        "hidden": false
+       },
+       {
+        "id": "a1",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 985,
+        "y": 310,
+        "hidden": false
+       },
+       {
+        "id": "a2",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 975,
+        "y": 370,
+        "hidden": false
+       },
+       {
+        "id": "a3",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a4",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a5",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a6",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a7",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "ball": {
+      "x": 990,
+      "y": 150,
+      "show": true
+     },
+     "lines": []
+    }
+   },
+   {
+    "name": "⑤9/20 サンダーランド81' ゴール前を横切る低いクロスが出る瞬間",
+    "dur": 1.2,
+    "hold": 1.2,
+    "snap": {
+     "home": {
+      "name": "マンチェスター・シティ",
+      "short": "MAN CITY",
+      "color": "#6cabdd",
+      "formation": "4-2-3-1",
+      "show": true,
+      "players": [
+       {
+        "id": "h0",
+        "no": 1,
+        "name": "ドンナルンマ",
+        "pos": "GK",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h1",
+        "no": "",
+        "name": "グヴァルディオル",
+        "pos": "左SB",
+        "x": 1020,
+        "y": 180,
+        "hidden": false
+       },
+       {
+        "id": "h2",
+        "no": 8,
+        "name": "コヴァチッチ",
+        "pos": "ボランチ",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h3",
+        "no": 7,
+        "name": "ンディアイ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h4",
+        "no": 47,
+        "name": "フォーデン",
+        "pos": "トップ下",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h5",
+        "no": 11,
+        "name": "ドク",
+        "pos": "左MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h6",
+        "no": "",
+        "name": "セメンヨ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h7",
+        "no": 9,
+        "name": "ハーランド",
+        "pos": "FW",
+        "x": 985,
+        "y": 330,
+        "hidden": false
+       },
+       {
+        "id": "h8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "away": {
+      "name": "サンダーランド",
+      "short": "SUNDERLAND",
+      "color": "#8d8d8d",
+      "formation": "4-4-2",
+      "show": true,
+      "players": [
+       {
+        "id": "a0",
+        "no": "",
+        "name": "GK",
+        "pos": "GK",
+        "x": 1035,
+        "y": 340,
+        "hidden": false
+       },
+       {
+        "id": "a1",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 1000,
+        "y": 300,
+        "hidden": false
+       },
+       {
+        "id": "a2",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 985,
+        "y": 360,
+        "hidden": false
+       },
+       {
+        "id": "a3",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a4",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a5",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a6",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a7",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "ball": {
+      "x": 1020,
+      "y": 180,
+      "show": true
+     },
+     "lines": [
+      {
+       "type": "arrow",
+       "color": "#111111",
+       "pts": [
+        [
+         1020,
+         180
+        ],
+        [
+         1015,
+         318
+        ]
+       ]
+      },
+      {
+       "type": "arrow",
+       "color": "#1e88e5",
+       "pts": [
+        [
+         960,
+         345
+        ],
+        [
+         1015,
+         318
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "name": "⑤9/20 サンダーランド81' 合わせて5-3",
+    "dur": 1.2,
+    "hold": 2.0,
+    "snap": {
+     "home": {
+      "name": "マンチェスター・シティ",
+      "short": "MAN CITY",
+      "color": "#6cabdd",
+      "formation": "4-2-3-1",
+      "show": true,
+      "players": [
+       {
+        "id": "h0",
+        "no": 1,
+        "name": "ドンナルンマ",
+        "pos": "GK",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h1",
+        "no": "",
+        "name": "グヴァルディオル",
+        "pos": "左SB",
+        "x": 1020,
+        "y": 180,
+        "hidden": false
+       },
+       {
+        "id": "h2",
+        "no": 8,
+        "name": "コヴァチッチ",
+        "pos": "ボランチ",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h3",
+        "no": 7,
+        "name": "ンディアイ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h4",
+        "no": 47,
+        "name": "フォーデン",
+        "pos": "トップ下",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h5",
+        "no": 11,
+        "name": "ドク",
+        "pos": "左MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h6",
+        "no": "",
+        "name": "セメンヨ",
+        "pos": "右MF",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h7",
+        "no": 9,
+        "name": "ハーランド",
+        "pos": "FW",
+        "x": 1015,
+        "y": 318,
+        "hidden": false
+       },
+       {
+        "id": "h8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "h10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "away": {
+      "name": "サンダーランド",
+      "short": "SUNDERLAND",
+      "color": "#8d8d8d",
+      "formation": "4-4-2",
+      "show": true,
+      "players": [
+       {
+        "id": "a0",
+        "no": "",
+        "name": "GK",
+        "pos": "GK",
+        "x": 1035,
+        "y": 330,
+        "hidden": false
+       },
+       {
+        "id": "a1",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 1010,
+        "y": 290,
+        "hidden": false
+       },
+       {
+        "id": "a2",
+        "no": "",
+        "name": "CB",
+        "pos": "CB",
+        "x": 995,
+        "y": 355,
+        "hidden": false
+       },
+       {
+        "id": "a3",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a4",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a5",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a6",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a7",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a8",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a9",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       },
+       {
+        "id": "a10",
+        "no": "",
+        "name": "",
+        "pos": "",
+        "x": -300,
+        "y": 340,
+        "hidden": true
+       }
+      ]
+     },
+     "ball": {
+      "x": 1015,
+      "y": 318,
+      "show": true
+     },
+     "lines": [
+      {
+       "type": "arrow",
+       "color": "#111111",
+       "pts": [
+        [
+         1020,
+         180
+        ],
+        [
+         1015,
+         318
+        ]
+       ]
+      },
+      {
+       "type": "arrow",
+       "color": "#1e88e5",
+       "pts": [
+        [
+         960,
+         345
+        ],
+        [
+         1015,
+         318
+        ]
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "caption": true
+ }
+}
